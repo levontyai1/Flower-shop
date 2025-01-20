@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:local="clr-namespace:WpfApp1"
+mc:Ignorable="d"
+Title="СУБД - Цветочный магазин" Height="500" Width="1000" ResizeMode="NoResize">
+    <Grid Background="Gray">
+        <DataGrid Name="DataGrid" Margin="403,39,48,35" Height="Auto" Width="Auto"/>
+        <Canvas Margin="48,39,621,35" Background="LightGray">
+            <TextBlock Text ="Управление запросами" FontWeight="Bold" FontSize="18" Height="25" Canvas.Left="50" Width="210" Canvas.Top="31"/>
+            <TextBlock Text ="Запрос" FontWeight="Bold" Height="25" Canvas.Left="18" Canvas.Top="116" Width="54"/>
+            <TextBlock Text="Обновленный запрос" FontWeight="Bold" Height="25" Canvas.Left="18" Canvas.Top="146" Width="130"/>
+            <TextBlock Text="Удаление строки" FontWeight="Bold" Height="25" Canvas.Left="18" Canvas.Top="176" Width="130"/>
+            <TextBlock Text ="[?]"
+                ToolTip="Условие: Написать запрос на создание вычисляемого поля «стоимость заказа» = стоимость экземпляра * количество."
+                FontWeight="Bold" Cursor="Help" Height="21" Canvas.Left="98" Canvas.Top="118" Width="18" TextDecorations="{x:Null}" Foreground="#FF3100FF"/>
+            <Button x:Name ="Btn_zapr1" Content ="Вывести результат" Click="ZAPR1" Height="25" Canvas.Left="160" Canvas.Top="111" Width="130"/>
+            <Button x:Name ="Btn_zapr2" Content ="Вывести результат" Click="ZAPR2" Height="25" Canvas.Left="160" Canvas.Top="141" Width="130"/>
+            <Button x:Name ="Btn_zapr3" Content ="Вывести результат" Click="ZAPR3" Height="25" Canvas.Left="160" Canvas.Top="171" Width="130"/>
+            <Button x:Name ="Btn_clear" Content ="Очистить" Click="СlearBtn" Height="25" Canvas.Left="105" Canvas.Top="297" Width="100"/>
+        </Canvas>
+    </Grid>
+</Window> 
